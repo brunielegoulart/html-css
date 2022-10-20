@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cone.ico" type="image/x-icon">
+    <title>Vídeos com HMTL5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Estes vídeos está hospedado no meu próprio servidor.</p>
+            <video src="videos/gato.mp4" width="200" controls autoplay loop></video>  
+                <p>Segundo vídeo!!</p>
+            <video src="videos/doces.mp4" width="300" controls autoplay></video>
+
+    <h2>Outro jeito: com capa</h2> 
+        <video width="200" poster="imagens/sweets.jpg" controls>
+            <source src="videos/doces.mp4" type="video/mp4">
+            <source src="videos/doces.ogg" type="video/ogg">
+            <p>Seu navegador não tem compartibilidade com reprodução de vídeo.</p>
+        </video>  <!--Não deu certo. Preciso arrumar!-->
+
+    <p>Segundo vídeo</p>
+        <video width="250" poster="imagens/gato.jpg" controls loop>
+            <source src="videos/gato.mp4" type="video/mp4">
+            <source src="videos/gato.webm" type="video/webm">
+            <p>Seu navegador não tem compartibilidade com reprodução de vídeo.</p>
+        </video> 
+
+        <h1>Inserindo vídeos do Youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <p>Inserindo outro vídeo do YouTube</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rHh1uQndXJ4" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <!--Também da para adicionar vídeos do Vimeo-->
+
+</body>
+</html>
