@@ -5,24 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="cone.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/fundo2.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+
+            /* Shorthand - background 
+                color > image > position > repet > [size] > attachment 
+            */
+
+            background: black url('imagens/fundo2.jpg') center center
+            no-repeat fixed;
+            background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
-            border: 1px solid darkblue;
-            border-radius: 15px;
+            border: 1px solid rgba(63, 63, 156, 0.568);
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -38,6 +48,32 @@
         dignissimos. Necessitatibus illo quasi a dolores, quod 
         reprehenderit natus amet odio, dolorum itaque harum 
         laboriosam voluptatibus dicta ducimus nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Eos enim velit laudantium, blanditiis, repellat 
+        sit itaque recusandae facere voluptatem assumenda quis 
+        omnis, pariatur accusamus. Totam neque inventore 
+        asperiores quia nostrum. Lorem ipsum dolor, sit amet 
+        consectetur adipisicing elit. Sapiente deleniti totam 
+        dignissimos. Necessitatibus illo quasi a dolores, quod 
+        reprehenderit natus amet odio, dolorum itaque harum 
+        laboriosam voluptatibus dicta ducimus nesciunt.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Eos enim velit laudantium, blanditiis, repellat 
+        sit itaque recusandae facere voluptatem assumenda quis 
+        omnis, pariatur accusamus. Totam neque inventore 
+        asperiores quia nostrum. 
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Eos enim velit laudantium, blanditiis, repellat 
+            sit itaque recusandae facere voluptatem assumenda quis 
+            omnis, pariatur accusamus. Totam neque inventore 
+            asperiores quia nostrum. Lorem ipsum dolor, sit amet 
+            consectetur adipisicing elit. Sapiente deleniti totam 
+            dignissimos. Necessitatibus illo quasi a dolores, quod 
+            reprehenderit natus amet odio, dolorum itaque harum 
+            laboriosam voluptatibus dicta ducimus nesciunt.
+        </p>
     </main>
 </body>
 </html>
