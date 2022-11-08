@@ -16,7 +16,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: #F4D19B;
+    background-color: #FFD372;
     font-family: var(--fonte1);
 }
 
@@ -31,7 +31,7 @@ header#cor {
 }
 
 header > h1 {
-    padding-top: 50px;
+    padding-top: 100px;
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vh;
@@ -71,7 +71,7 @@ section > p {
 }
 
 section.normal {
-    background-color: #F4D19B;
+    background-color: #FFD372;
     color: black;
 }
 
