@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+           font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead, tfoot {
+            background-color: #3C4048;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #3C4048;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Acre</td>
+                <td class="num">829.619</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.375.823 </td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">797.722</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.063.614</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.344.447</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.020.460</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.039.444</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.016.356</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6.778.772</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.000.229</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.344.544</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.713.147</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.119.536</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.366.628</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.025.558</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.320.892</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.473.266</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.219.257</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.718.956</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.507.003</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.322.895</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.805.788</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">522.636</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num" >7.001.161</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.094.866</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.288.116</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.550.194</td>
+            </tr>
+            
+        <tbody>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>215.329.365</strong></td>
+            </tr>
+        </tfoot>        
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Porro et veniam unde distinctio, ducimus, itaque, officiis 
+        quo sequi nulla doloribus magni voluptates repudiandae 
+        nesciunt recusandae temporibus odio quisquam provident 
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Porro et veniam unde distinctio, ducimus, itaque, officiis 
+        quo sequi nulla doloribus magni voluptates repudiandae 
+        nesciunt recusandae temporibus odio quisquam provident 
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Porro et veniam unde distinctio, ducimus, itaque, officiis 
+        quo sequi nulla doloribus magni voluptates repudiandae 
+        nesciunt recusandae temporibus odio quisquam provident 
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Porro et veniam unde distinctio, ducimus, itaque, officiis 
+        quo sequi nulla doloribus magni voluptates repudiandae 
+        nesciunt recusandae temporibus odio quisquam provident 
+        ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem optio veniam saepe tenetur repellendus vero illum, 
+        molestiae tempora similique laboriosam non culpa deleniti 
+        quis, fugit doloribus. Hic molestias veritatis porro?
+    </p>
+</body>
+</html>
