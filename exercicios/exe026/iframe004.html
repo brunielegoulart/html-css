@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Minus fugiat enim in 
+        laborum corporis repudiandae tempore 
+        architecto ducimus! Omnis aperiam debitis 
+        accusamus? Repellat cupiditate ducimus maiores 
+        velit dolor deserunt neque.
+    </p>
+                    <!--Quando usa a configuração sandbox=sandbox  e referrerpolicy vai cria-se uma "proteção" um pouco maior a ataques -->
+    <iframe src="paginas-extras/pagina04.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+                                                            <!-- Quando usa allow-same-origin allow-forms allow-scripts esta permitindo:
+                                                                llow-same-origin = coisas da mesma origem
+                                                                allow-forms = uso de formulários
+                                                                allow-scripts = scripts
+                                                            -->
+    </iframe>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Minus fugiat enim in 
+        laborum corporis repudiandae tempore 
+        architecto ducimus! Omnis aperiam debitis 
+        accusamus? Repellat cupiditate ducimus maiores 
+        velit dolor deserunt neque.
+    </p>
+</body>
+</html>
